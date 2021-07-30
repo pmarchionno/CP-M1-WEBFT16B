@@ -253,7 +253,7 @@ var cardGame = function(playerOneCards, playerTwoCards){
   let atack2, def2;
   let danger1 = 0, danger2 = 0;
 
-  while(playerOneCards.size() > 0 && playerTwoCards.size() > 0 && danger1 < 100 && danger2 < 100){
+  while(playerOneCards.size() > 1 && playerTwoCards.size() > 1 && danger1 < 100 && danger2 < 100){
     atack1 = playerOneCards.dequeue().attack;
     def1 = playerOneCards.dequeue().defense;
     
